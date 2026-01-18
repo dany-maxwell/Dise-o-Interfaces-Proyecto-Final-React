@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import FeaturedGame from './FeaturedGame'
+import './featured.css'
 
 const Offers = ({ games }) => {
     return (
@@ -20,7 +21,7 @@ const Offers = ({ games }) => {
                 className='offers__swiper'>
                 {games.map(game => (
                     <SwiperSlide key={game.id}>
-                        <FeaturedGame game={game} />
+                        <FeaturedGame game={game}/>
                     </SwiperSlide>
                 ))}
             </Swiper>
