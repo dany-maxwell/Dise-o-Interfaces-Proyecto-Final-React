@@ -1,4 +1,3 @@
-//yo mero
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
 
@@ -6,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import FeaturedGame from './FeaturedGame'
+import GameCard from "../GameCard"
 
 const ForYou = ({ games }) => {
     return (
@@ -15,13 +14,13 @@ const ForYou = ({ games }) => {
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation
-                pagination={{ clickable: true }}
+                
                 loop
-                slidesPerView={4}
-                className='offers__swiper'>
+                slidesPerView={3}
+                className='foryou__swiper'>
                 {games.map(game => (
                     <SwiperSlide key={game.id}>
-                        <FeaturedGame game={game} />
+                        <GameCard game={game} />
                     </SwiperSlide>
                 ))}
             </Swiper>
