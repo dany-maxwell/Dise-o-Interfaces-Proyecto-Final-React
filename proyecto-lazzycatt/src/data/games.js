@@ -24,7 +24,7 @@ export const games = [
         img: getImage("ark-surival-evolved.jpg"),
         price: 39.99,
         featured: true,
-        category: "Extraction Shooter"
+        category: "Survival"
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ export const games = [
         img: getImage("battelfield-6.jpg"),
         price: 39.99,
         featured: true,
-        category: "Extraction Shooter"
+        category: "Shooter"
     },
     {
         id: 4,
