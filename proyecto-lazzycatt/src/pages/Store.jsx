@@ -4,7 +4,6 @@ import Offers from '../components/store/Offers';
 import ForYou from '../components/store/ForYou';
 import Categories from '../components/store/Categories';
 import { games } from "../data/games";
-
 const Store = () => {
     const featuredGames = games.filter(game => game.featured);
     return (

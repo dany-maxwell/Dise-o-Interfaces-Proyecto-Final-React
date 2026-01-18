@@ -6,7 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import FeaturedGame from './FeaturedGame'
-import './featured.css'
+
+import "./Store.css"
 
 const Offers = ({ games }) => {
     return (

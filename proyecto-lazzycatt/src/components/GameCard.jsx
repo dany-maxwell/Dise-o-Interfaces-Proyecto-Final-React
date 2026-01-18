@@ -3,7 +3,7 @@ function GameCard({ game }) {
     <div className="card">
       <img src={game.img} />
       <p>{game.name}</p>
-      <button>Comprar</button>
+      <button className="button">Comprar</button>
     </div>
   );
 }

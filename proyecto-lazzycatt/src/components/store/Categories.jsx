@@ -5,8 +5,7 @@ import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 
-import FeaturedGame from "./FeaturedGame"
-import './Categories.css'
+import GameCard from "../GameCard"
 
 const categoryList = [
     "Action RPG",
@@ -26,7 +25,7 @@ const Categories = ({ games }) => {
 
     return (
         <section className="categoriesBox">
-            <h2>Categorías</h2>
+            <h1>Categorías</h1>
 
 
             <div className="categoriesBox__buttons">
@@ -55,7 +54,7 @@ const Categories = ({ games }) => {
             >
                 {filteredGames.map(game => (
                     <SwiperSlide key={game.id}>
-                        <FeaturedGame game={game} />
+                        <GameCard game={game} />
                     </SwiperSlide>
                 ))}
             </Swiper>
