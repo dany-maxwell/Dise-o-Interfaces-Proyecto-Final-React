@@ -1,0 +1,35 @@
+
+.footer{
+    padding: 10px;
+    background-color: #09153a;
+}
+.navUs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.navUs a,
+.navUs a:visited,
+.navUs a:active {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navUs a:hover {
+  opacity: 0.9;
+}
+.authors{
+     display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-line {
+  border: none;
+  height: 1px;
+  background-color: white;
+  width: 80%;
+  margin: 15px auto;
+  opacity: 0.6;
+}
+
