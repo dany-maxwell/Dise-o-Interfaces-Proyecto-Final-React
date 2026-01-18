@@ -1,0 +1,31 @@
+.header{
+    padding: 10px;
+    background-color: #09153a;
+}
+
+.header__container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__logo{
+    padding: 5px;
+    margin-inline: 5px;
+}
+
+.header__barra{
+    display: flex;
+    align-items: center;
+}
+
+.header__hamburger{
+    font-size: 25px;
+    display: none;
+}
+
+@media(max-width: 900px){
+    .header__hamburger{
+        display: block;
+    }
+}
