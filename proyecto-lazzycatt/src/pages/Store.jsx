@@ -1,18 +1,15 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
-import 'swiper/css'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Offers from '../components/store/Offers'
+import {games} from '../data/games'
 
-const Tienda = () => {
+const Store = () => {
     return (
         <>
-            <main className='content'>
             <Header />
-            <h1>Ofertas</h1>
-            </main>
-            <Footer />
+            <Offers games = {games}/>
+
+            <Footer />    
         </>
     )
 }
-export default Tienda
+export default Store

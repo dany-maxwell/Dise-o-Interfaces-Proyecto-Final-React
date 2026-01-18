@@ -39,8 +39,13 @@
 }
 
 .search{
+  color: #00040e;
   background-color: #F8FAFC;
 
   height: 1.7rem;
+  width: 200px;
   border: none;
+  border-radius: 25px;
+  padding-inline: 10px;
+  margin-inline: 5px;
 }
