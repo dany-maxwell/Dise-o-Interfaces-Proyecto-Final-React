@@ -87,7 +87,7 @@ export const games = [
         name: "Detroit: Become Human",
         img: getImage("detroit-become-human.jpg"),
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Interactive Drama"
     },
     {
@@ -183,7 +183,7 @@ export const games = [
         name: "Path of Exile 2",
         img: getImage("path-of-exile-2.jpg"),
         price: 0.0,
-        featured: true,
+        featured: false,
         category: "ARPG"
     },
     {
@@ -247,7 +247,7 @@ export const games = [
         name: "The Finals",
         img: getImage("the-finals.jpg"),
         price: 0.0,
-        featured: true,
+        featured: false,
         category: "FPS"
     },
     {
@@ -287,7 +287,7 @@ export const games = [
         name: "Where Winds Meet",
         img: getImage("where-winds-meet.jpg"),
         price: 59.99,
-        featured: true,
+        featured: false,
         category: "Action RPG"
     }
 ]

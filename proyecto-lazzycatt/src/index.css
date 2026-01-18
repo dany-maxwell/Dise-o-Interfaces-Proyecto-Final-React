@@ -10,7 +10,6 @@
   color: #F8FAFC;
   background-color: #00040e;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,7 +20,7 @@
   color: #F8FAFC;
   text-decoration: none;
   
-  padding: 5px;
+  padding: 5px 10px;
   margin-inline: 5px;
   border-radius: 5px;
 }
