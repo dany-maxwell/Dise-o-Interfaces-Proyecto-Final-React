@@ -3,16 +3,13 @@ import Footer from '../components/Footer';
 import Offers from '../components/store/Offers';
 import { games } from "../data/games";
 
-
-
-const Tienda = () => {
-    const featuredGames = games.filter(game => game.featured)
+const Store = () => {
     return (
         <>
             <Header />
-            <Offers games ={featuredGames}/>
-            <Footer />
+            <Offers games = {games}/>
+            <Footer />    
         </>
     )
 }
-export default Tienda
+export default Store
