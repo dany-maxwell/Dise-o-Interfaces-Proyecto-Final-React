@@ -18,11 +18,11 @@ const Offers = ({ games }) => {
                 loop
                 slidesPerView={1}
                 className='offers__swiper'>
-        {games.map(game => (
-          <SwiperSlide key={game.id}>
-            <FeaturedGame game={game} />
-          </SwiperSlide>
-        ))}
+                {games.map(game => (
+                    <SwiperSlide key={game.id}>
+                        <FeaturedGame game={game} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </section>
     )

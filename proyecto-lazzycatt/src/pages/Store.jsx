@@ -6,10 +6,11 @@ import { games } from "../data/games";
 
 
 const Tienda = () => {
+    const featuredGames = games.filter(game => game.featured)
     return (
         <>
             <Header />
-            <Offers games ={games}/>
+            <Offers games ={featuredGames}/>
             <Footer />
         </>
     )
