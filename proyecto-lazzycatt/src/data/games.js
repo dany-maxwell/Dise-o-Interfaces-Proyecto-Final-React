@@ -21,15 +21,15 @@ export const games = [
     {
         id: 2,
         name: "Ark Survival Evolved",
-        img: "",
+        img: getImage("ark-surival-evolved.jpg"),
         price: 39.99,
         featured: true,
         category: "Extraction Shooter"
     },
     {
         id: 3,
-        name: "Arc Riders",
-        img: "",
+        name: "Battelfield VI",
+        img: getImage("battelfield-6.jpg"),
         price: 39.99,
         featured: true,
         category: "Extraction Shooter"
@@ -39,7 +39,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -47,7 +47,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -55,7 +55,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -63,7 +63,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -71,7 +71,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -79,7 +79,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -87,7 +87,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -95,7 +95,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -103,7 +103,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -111,7 +111,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     },
     {
@@ -119,7 +119,7 @@ export const games = [
         name: "Arc Riders",
         img: "",
         price: 39.99,
-        featured: true,
+        featured: false,
         category: "Extraction Shooter"
     }
 ]

@@ -4,10 +4,11 @@ import Offers from '../components/store/Offers';
 import { games } from "../data/games";
 
 const Store = () => {
+    const featuredGames = games.filter(game => game.featured);
     return (
         <>
             <Header />
-            <Offers games = {games}/>
+            <Offers games = {featuredGames}/>
             <Footer />    
         </>
     )
