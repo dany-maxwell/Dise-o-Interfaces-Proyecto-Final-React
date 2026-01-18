@@ -7,9 +7,11 @@ const Header = () => {
 
     const toggleMenu = () => {
         setMenuActive(!menuActive)
+        console.log("hola")
     }
     const closeMenu = () => {
         setMenuActive(false)
+        console.log("chao")
     }
 
     return (
@@ -18,7 +20,6 @@ const Header = () => {
                 <div className="header__logo">
                     <h1>LazzyCatt</h1>
                 </div>
-
                 <div className={`header__barra ${menuActive ? "active" : ""}`}>
                     <div className="navegacion">
                         <Link to="/" className="navegacion__link" onClick={closeMenu}>TIENDA</Link>
