@@ -1,0 +1,63 @@
+.categoriesBox {
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.categoriesBox h2 {
+  margin-bottom: 1rem;
+}
+
+.categoriesBox__buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.categoriesBox__buttons button {
+  padding: 0.5rem 1rem;
+  background: #09153a;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.categoriesBox__buttons button.active {
+  background: #c84b31;
+}
+
+.featuredGame__image {
+  aspect-ratio: 3 / 4;   /* ratio tipo carátula */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.featuredGame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.swiper-slide {
+  width: auto;
+}
+
+
+@media (max-width: 600px) {
+  .categoriesBox {
+    padding: 1.2rem;
+  }
+
+  .categoriesBox h2 {
+    font-size: 1.3rem;
+  }
+
+  .categoriesBox__buttons button {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+}
