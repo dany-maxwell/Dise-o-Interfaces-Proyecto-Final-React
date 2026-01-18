@@ -26,7 +26,7 @@ const Categories = ({ games }) => {
 
     return (
         <section className="categoriesBox">
-            <h2>Categorías</h2>
+            <h1>Categorías</h1>
 
 
             <div className="categoriesBox__buttons">

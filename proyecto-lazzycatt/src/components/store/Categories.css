@@ -27,13 +27,6 @@
   background: #c84b31;
 }
 
-.featuredGame__image {
-  aspect-ratio: 3 / 4;   /* ratio tipo carátula */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 .featuredGame img {
   width: 100%;
