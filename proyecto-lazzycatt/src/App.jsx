@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import AOS from 'aos'
 import './App.css'
 
-import Store from './pages/Store'
+import Store from './pages/Store/Store'
+import Register from './pages/Register/Register'
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Store/>}/>
+        <Route path='/register' element={<Register/>}/>
       </Routes>
     </BrowserRouter>
   )

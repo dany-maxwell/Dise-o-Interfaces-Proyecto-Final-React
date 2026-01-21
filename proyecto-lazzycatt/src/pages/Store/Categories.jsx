@@ -5,7 +5,7 @@ import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 
-import GameCard from "../GameCard"
+import GameCard from "../../components/GameCard/GameCard"
 
 const categoryList = [
     "Action RPG",

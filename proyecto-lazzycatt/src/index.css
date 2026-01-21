@@ -8,34 +8,39 @@
   
   color-scheme: light dark;
   color: #F8FAFC;
-  background-color: #00040e;
+  background: radial-gradient(circle at top, #0b1633, #050a18);
+
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.button{
-  background-color: #c84b31;
-  color: #F8FAFC;
+a {
   text-decoration: none;
-  
+}
+
+.button {
+  margin-top: 10px;
+  padding: 14px;
+  margin-inline: 5px;
+  border-radius: 14px;
   border: none;
-  padding: 5px 10px;
-  margin-inline: 5px;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #ff6a3d, #ff4d2d);
+  color: #0b1020;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
-.navegacion__link{
-  color: #F8FAFC;
-  text-decoration: none;
-
-  padding: 5px;
-  margin-inline: 5px;
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 106, 61, 0.35);
 }
 
-.navegacion__link:hover{
-  color: #c84b31;
+.button:active {
+  transform: scale(0.98);
 }
 
 .search{

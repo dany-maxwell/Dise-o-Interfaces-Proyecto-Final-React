@@ -4,7 +4,7 @@ function FeaturedGame({ game }) {
       <img src={game.img} alt={game.name} />
       <div className="featured-info">
         <h2>{game.name}</h2>
-        <button>
+        <button className="button">
             {game.price}
         </button>
       </div>

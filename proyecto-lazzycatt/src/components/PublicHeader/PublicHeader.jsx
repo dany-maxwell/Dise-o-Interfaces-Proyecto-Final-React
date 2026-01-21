@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import './Header.css'
+import './PublicHeader.css'
 
 const Header = () => {
     const [menuActive, setMenuActive] = useState(false)
@@ -21,9 +21,9 @@ const Header = () => {
                     <h1>LazzyCatt</h1>
                 </div>
                 <div className={`header__barra ${menuActive ? "active" : ""}`}>
-                    <div className="navegacion">
-                        <Link to="/" className="navegacion__link" onClick={closeMenu}>TIENDA</Link>
-                        <Link to="/news" className="navegacion__link" onClick={closeMenu}>NOVEDADES</Link>
+                    <div className="navigation">
+                        <Link to="/" className="navigation__link" onClick={closeMenu}>TIENDA</Link>
+                        <Link to="/news" className="navigation__link" onClick={closeMenu}>NOVEDADES</Link>
                     </div>
                     <div className="browser">
                         <input type="text" placeholder="Buscar" className="search"/>

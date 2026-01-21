@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import GameCard from "../GameCard"
+import GameCard from '../../components/GameCard/GameCard';
 
 const ForYou = ({ games }) => {
     return (
