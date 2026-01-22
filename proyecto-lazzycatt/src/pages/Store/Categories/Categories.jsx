@@ -5,7 +5,9 @@ import { Navigation } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/navigation"
 
-import GameCard from "../../components/GameCard/GameCard"
+import GameCard from "../../../components/GameCard/GameCard"
+
+import './Categories.css'
 
 const categoryList = [
     "Action RPG",
@@ -24,11 +26,11 @@ const Categories = ({ games }) => {
         .slice(0, 4)
 
     return (
-        <section className="categoriesBox">
+        <section className="categories">
             <h1>Categorías</h1>
 
 
-            <div className="categoriesBox__buttons">
+            <div className="categories__buttons">
                 {categoryList.map(category => (
                     <button
                         key={category}

@@ -1,0 +1,35 @@
+.card {
+  background: linear-gradient(180deg, #0f1b3d, #0b1430);
+  border-radius: 14px;
+  overflow: hidden;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 12px 14px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.card .button {
+  margin: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}

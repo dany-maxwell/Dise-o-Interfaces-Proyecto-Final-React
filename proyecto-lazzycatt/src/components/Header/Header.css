@@ -1,0 +1,142 @@
+:root {
+  --bg-header: #09153a;
+  --bg-menu: #09153a;
+}
+
+.header {
+  width: 100%;
+  background: var(--bg-header);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.header__barra {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+}
+
+.navigation__link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navigation__link:hover {
+  color: var(--text-main);
+}
+
+.browser {
+  display: flex;
+}
+
+.search {
+  background: #0a122a;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 8px 14px;
+  color: white;
+  outline: none;
+  width: 180px;
+}
+
+.search::placeholder {
+  color: #9aa4ff;
+}
+
+.header__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.header__user{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header__hamburger {
+  display: none;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+  .header__hamburger {
+    display: block;
+  }
+
+  .header__barra {
+    position: fixed;
+    top: 64px;
+    right: -100%;
+    width: 260px;
+    height: calc(100vh - 64px);
+    background: var(--bg-menu);
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+
+    transition: right 0.3s ease;
+  }
+
+  .header__barra.active {
+    right: 0;
+  }
+
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation__link {
+    font-size: 1.1rem;
+  }
+
+  .browser {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .header__actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}

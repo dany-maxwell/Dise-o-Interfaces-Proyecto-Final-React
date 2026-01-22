@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import GameCard from '../../components/GameCard/GameCard';
+import GameCard from '../../../components/GameCard/GameCard';
 
 const ForYou = ({ games }) => {
     return (
@@ -16,7 +16,7 @@ const ForYou = ({ games }) => {
                 navigation
                 
                 loop
-                slidesPerView={3}
+                slidesPerView={4}
                 className='foryou__swiper'>
                 {games.map(game => (
                     <SwiperSlide key={game.id}>

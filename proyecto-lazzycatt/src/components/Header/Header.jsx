@@ -1,18 +1,23 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import './PublicHeader.css'
+import { useAuth } from "../../context/AuthContext"
+
+import PublicActions from "./PublicActions/PublicActions"
+import UserActions from "./UserActions/UserActions"
+
+import './Header.css'
 
 const Header = () => {
     const [menuActive, setMenuActive] = useState(false)
 
     const toggleMenu = () => {
         setMenuActive(!menuActive)
-        console.log("hola")
     }
     const closeMenu = () => {
         setMenuActive(false)
-        console.log("chao")
     }
+
+    const { user } = useAuth()
 
     return (
         <header className="header">
@@ -26,11 +31,10 @@ const Header = () => {
                         <Link to="/news" className="navigation__link" onClick={closeMenu}>NOVEDADES</Link>
                     </div>
                     <div className="browser">
-                        <input type="text" placeholder="Buscar" className="search"/>
+                        <input type="text" name="search" placeholder="Buscar" className="search"/>
                     </div>
-                    <div className="buttons">
-                        <Link to="/login" className="button" onClick={closeMenu}>Login</Link>
-                        <Link to="/register" className="button" onClick={closeMenu}>Registro</Link>
+                    <div className="header__actions">
+                        {user ? <UserActions /> : <PublicActions />}
                     </div>
                 </div>
                 <div className="header__hamburger" onClick={toggleMenu}>

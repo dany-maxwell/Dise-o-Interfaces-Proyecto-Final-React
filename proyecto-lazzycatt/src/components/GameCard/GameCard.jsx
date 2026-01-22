@@ -1,3 +1,5 @@
+import './GameCard.css'
+
 function GameCard({ game }) {
   return (
     <div className="card">
