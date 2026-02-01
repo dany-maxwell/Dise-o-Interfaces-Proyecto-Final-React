@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { useAuth } from "../../context/AuthContext"
-import PublicHeader from '../../components/Header/Header'
 import "../../styles-pag/profile.css"
 
 
@@ -9,8 +8,6 @@ const Profile = () => {
   const [avatar, setAvatar] = useState(
   localStorage.getItem(`avatar_${profile.email}`) || null
 )
-
-
 
   if (!profile) return null
 
@@ -32,8 +29,6 @@ const Profile = () => {
 
   return (
     <>
-      <PublicHeader />
-
       <main className="profile-container">
 
         {/* TARJETA PERFIL */}

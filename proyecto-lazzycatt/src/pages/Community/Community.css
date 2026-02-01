@@ -135,3 +135,16 @@
 .postCard__like:hover {
   border-color: cyan;
 }
+
+.postCard__delete {
+  background: #200;
+  border: 1px solid red;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.postCard__delete:hover {
+  background: red;
+}

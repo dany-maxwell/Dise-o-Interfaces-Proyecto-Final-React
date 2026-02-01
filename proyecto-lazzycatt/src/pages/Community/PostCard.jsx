@@ -1,11 +1,19 @@
 import { useAuth } from "../../context/AuthContext"
-import { likePost } from "../../services/postService"
+import { toggleLike, deletePost } from "../../services/postService"
 
 const PostCard = ({ post, reload }) => {
   const { user } = useAuth()
 
   const handleLike = async () => {
-    await likePost(post.id, user.uid)
+    await toggleLike(post, user.uid)
+    reload()
+  }
+
+  const handleDelete = async () => {
+    const seguro = confirm("¿Eliminar publicación?")
+    if (!seguro) return
+
+    await deletePost(post.id)
     reload()
   }
 
@@ -32,6 +40,15 @@ const PostCard = ({ post, reload }) => {
         <span className="postCard__date">
           {formatDate(post.createdAt)}
         </span>
+
+        {user?.uid === post.authorId && (
+          <button
+            className="postCard__delete"
+            onClick={handleDelete}
+          >
+            <i class="fa-regular fa-trash-can"></i> Eliminar
+          </button>
+        )}
       </div>
 
       <h3 className="postCard__title">
@@ -53,7 +70,7 @@ const PostCard = ({ post, reload }) => {
             className="postCard__like"
             onClick={handleLike}
           >
-            <i class="fa-solid fa-heart"></i>  {post.likes?.length || 0}
+            <i className="fa-solid fa-heart"></i>  {post.likes?.length || 0}
           </button>
         )}
 

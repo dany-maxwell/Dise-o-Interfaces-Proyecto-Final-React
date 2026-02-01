@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 import { useAuth } from "../../../context/AuthContext"
 import { signOutUser } from "../../../services/authService"
 import { Link } from "react-router-dom"
@@ -7,6 +8,8 @@ const UserActions = () => {
   const { user } = useAuth()
   const [open, setOpen] = useState(false)
   const ref = useRef()
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleClick = (e) => {
@@ -21,6 +24,7 @@ const UserActions = () => {
 
   const handleLogout = async () => {
     await signOutUser()
+    navigate("/")
   }
 
   return (
@@ -32,8 +36,8 @@ const UserActions = () => {
       >
         <span>{user?.displayName}</span>
 
-        {/* icono genérico */}
-        <span className="userMenu__icon"><i class="fa-solid fa-user"></i></span>
+        
+        <span className="userMenu__icon"><i className="fa-solid fa-user"></i></span>
       </div>
 
       {open && (

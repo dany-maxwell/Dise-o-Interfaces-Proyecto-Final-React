@@ -1,15 +1,19 @@
 import { db } from '../firebase/firebase'
 import {
     collection, addDoc, getDocs, orderBy, serverTimestamp,
-    doc, updateDoc, arrayUnion, query
+    doc, updateDoc, deleteDoc, arrayUnion, arrayRemove, query
 } from 'firebase/firestore'
 
 export const createPost = async (post) => {
-    return addDoc(collection(db, "post"), {
+    return addDoc(collection(db, "posts"), {
         ...post,
         createAt: serverTimestamp(),
         likes: []
     })
+}
+
+export const deletePost = async (postId) => {
+  await deleteDoc(doc(db, "posts", postId))
 }
 
 export const getPosts = async () => {
@@ -24,10 +28,14 @@ export const getPosts = async () => {
     }))
 }
 
-export const likePost = async (postId, userId) => {
-    const ref = doc (db, "posts", postID)
+export const toggleLike = async (post, userId) => {
+    const ref = doc(db, "posts", post.id)
+
+    const yaDioLike = post.likes?.includes(userId)
+
     await updateDoc(ref, {
-        likes: arrayUnion(userid)
+        likes: yaDioLike
+            ? arrayRemove(userId)
+            : arrayUnion(userId)
     })
 }
-
