@@ -7,6 +7,9 @@ import Store from './pages/Store/Store'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import Profile from './pages/Profile/Profile'
+import Politics from './pages/Politics/Politics'
+import AboutUs from './pages/AboutUs/AboutUs'
+import Support from './pages/Support/Support'
 
 function App() {
   useEffect(() => {
@@ -20,9 +23,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Store/>}/>
+        <Route path='/aboutus' element={<AboutUs />}/>
+        <Route path='/politics' element={<Politics />}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/profile' element={<Profile />}/>
+        <Route path='/support' element={<Support />}/>
       </Routes>
     </BrowserRouter>
   )

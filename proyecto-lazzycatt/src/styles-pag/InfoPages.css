@@ -1,0 +1,86 @@
+/* Contenedor principal */
+main {
+  padding: 50px 10%;
+  color: #eaeaea;
+  background: linear-gradient(180deg, #111, #0a0a0a);
+  min-height: 70vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hidden-title {
+    text-align: center;
+}
+/* Secciones */
+#acerca, #politicas, #soporte {
+  max-width: 900px;
+  margin: auto;
+  background: #161616;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #0f1b3d;
+}
+
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6a3d;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 25px;
+  color: #ffffff;
+  border-left: 4px solid #ff6a3d;
+  padding-left: 10px;
+}
+
+/* Texto */
+p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #cccccc;
+}
+
+/* Listas */
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #ff6a3d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Imagen gato */
+.gato-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.gato-img {
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #0f1b3d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    padding: 30px 5%;
+  }
+
+  #acerca, #politicas, #soporte {
+    padding: 25px;
+  }
+}

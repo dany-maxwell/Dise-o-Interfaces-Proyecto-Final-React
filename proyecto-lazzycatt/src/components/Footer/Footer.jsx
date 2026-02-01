@@ -9,9 +9,9 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="navUs">
-                <Link to="/AboutUs">Acerca de Nosotros</Link>
-                <Link to="/Support">Soporte</Link>
-                <Link to="/Politics">Políticas</Link>
+                <Link to="/aboutus">Acerca de Nosotros</Link>
+                <Link to="/support">Soporte</Link>
+                <Link to="/politics">Políticas</Link>
                 <a href="https://twitter.com" target="_blank" rel="noreferrer">
                     <FaTwitter />
                 </a>
