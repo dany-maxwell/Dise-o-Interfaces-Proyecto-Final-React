@@ -24,7 +24,6 @@ const Login = () => {
     }
     return(
         <>
-            <PublicHeader/>
             <section className="login">
                 <form onSubmit={handleLogin}>
                     <h1>Login</h1>
@@ -47,7 +46,6 @@ const Login = () => {
                     <button type="submit" className="button">Ingresar</button>
                 </form>
             </section>
-            <Footer/>
         </>
     )
 }

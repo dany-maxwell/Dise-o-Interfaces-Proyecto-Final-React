@@ -28,7 +28,7 @@ const Header = () => {
                 <div className={`header__barra ${menuActive ? "active" : ""}`}>
                     <div className="navigation">
                         <Link to="/" className="navigation__link" onClick={closeMenu}>TIENDA</Link>
-                        <Link to="/news" className="navigation__link" onClick={closeMenu}>NOVEDADES</Link>
+                        <Link to="/community" className="navigation__link" onClick={closeMenu}>COMUNIDAD</Link>
                     </div>
                     <div className="browser">
                         <input type="text" name="search" placeholder="Buscar" className="search"/>

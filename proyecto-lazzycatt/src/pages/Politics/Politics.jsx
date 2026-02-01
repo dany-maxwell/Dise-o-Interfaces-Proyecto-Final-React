@@ -1,11 +1,8 @@
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import "../../styles-pag/InfoPages.css";
 
 const Politics = () => {
     return (
         <>
-            <Header />
             <main>
                 <section id="politicas">
                     <h2>Políticas de la Tienda</h2>
@@ -84,7 +81,6 @@ const Politics = () => {
                 </section>
 
             </main>
-            <Footer />
         </>
     )
 }

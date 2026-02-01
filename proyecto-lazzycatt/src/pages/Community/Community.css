@@ -1,0 +1,137 @@
+.community {
+  padding: 20px;
+  width: 1100px;
+  margin: 0 auto;
+  color: #eaeaea;
+}
+
+.community h2 {
+  margin-bottom: 15px;
+  color: cyan;
+  font-size: 22px;
+}
+
+/* ===== FORMULARIO ===== */
+
+.postForm {
+  background: #0a1016;
+  border: 1px solid #1b2a38;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postForm input,
+.postForm textarea,
+.postForm select {
+  background: #06090d;
+  border: 1px solid #1b2a38;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.postForm textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.postForm button {
+  background: linear-gradient(45deg, cyan, #00aaff);
+  border: none;
+  color: black;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.postForm button:hover {
+  opacity: 0.9;
+}
+
+/* ===== POST CARD ===== */
+
+.postCard {
+  background: #0a1016;
+  border: 1px solid #1b2a38;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+
+  transition: 0.2s;
+}
+
+.postCard:hover {
+  border-color: cyan;
+  transform: translateY(-2px);
+}
+
+.postCard__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+/* Tipos */
+
+.postCard__type {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.postCard__type.news {
+  background: #ff9800;
+  color: black;
+}
+
+.postCard__type.update {
+  background: cyan;
+  color: black;
+}
+
+.postCard__type.community {
+  background: #1b2a38;
+  color: white;
+}
+
+.postCard__title {
+  margin: 6px 0;
+  color: white;
+}
+
+.postCard__content {
+  color: #b5b5b5;
+  margin: 8px 0;
+  white-space: pre-line;
+}
+
+.postCard__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.postCard__author {
+  font-size: 13px;
+  color: #888;
+}
+
+.postCard__like {
+  background: #06090d;
+  border: 1px solid #1b2a38;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.postCard__like:hover {
+  border-color: cyan;
+}

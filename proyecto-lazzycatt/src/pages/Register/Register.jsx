@@ -1,6 +1,3 @@
-import PublicHeader from "../../components/Header/Header"
-import Footer from "../../components/Footer/Footer"
-
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { registerUser } from "../../services/authService"
@@ -30,7 +27,6 @@ const Register = () => {
 
     return (
         <>
-            <PublicHeader />
             <section className="register">
                 <form onSubmit={handleRegister}>
                     <h1 className="">Register</h1>
@@ -86,8 +82,6 @@ const Register = () => {
                 </form>
 
             </section>
-
-            <Footer />
         </>
     )
 }

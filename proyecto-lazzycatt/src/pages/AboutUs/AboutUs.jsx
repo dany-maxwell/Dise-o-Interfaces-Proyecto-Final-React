@@ -1,5 +1,3 @@
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import gatoImg from "../../assets/games/gato-like.jpg";
 import "../../styles-pag/InfoPages.css";
 
@@ -7,7 +5,6 @@ import "../../styles-pag/InfoPages.css";
 const AboutUs = () => {
   return (
     <>
-      <Header />
       <main>
         <h1 className="hidden-title">
           LazyCattGames - Tienda de videojuegos digitales
@@ -59,7 +56,6 @@ const AboutUs = () => {
           </figure>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

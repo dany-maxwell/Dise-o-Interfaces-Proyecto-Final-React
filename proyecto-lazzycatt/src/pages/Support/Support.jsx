@@ -1,11 +1,8 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import "../../styles-pag/InfoPages.css";
 
 const Support = () => {
     return (
         <>
-            <Header />
             <main>
                 <section id="soporte">
                     <h2>Soporte</h2>
@@ -72,8 +69,6 @@ const Support = () => {
                     </p>
                 </section>
             </main>
-
-            <Footer />
         </>
     )
 }

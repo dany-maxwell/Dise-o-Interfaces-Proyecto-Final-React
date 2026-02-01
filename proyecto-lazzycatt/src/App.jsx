@@ -4,12 +4,16 @@ import AOS from 'aos'
 import './App.css'
 
 import Store from './pages/Store/Store'
+import Community from './pages/Community/Community'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import Profile from './pages/Profile/Profile'
 import Politics from './pages/Politics/Politics'
 import AboutUs from './pages/AboutUs/AboutUs'
 import Support from './pages/Support/Support'
+
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {
   useEffect(() => {
@@ -21,15 +25,18 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route index element={<Store/>}/>
         <Route path='/aboutus' element={<AboutUs />}/>
+        <Route path='/community' element={<Community />}/>
         <Route path='/politics' element={<Politics />}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/profile' element={<Profile />}/>
         <Route path='/support' element={<Support />}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
