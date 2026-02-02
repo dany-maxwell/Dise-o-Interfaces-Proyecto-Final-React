@@ -24,9 +24,9 @@ const PostCard = ({ post, reload }) => {
   }
 
   const labels = {
-    news: "📰 Noticia",
-    update: "🎮 Actualización",
-    community: "💬 Comunidad"
+    news: "Noticia",
+    update: "Actualización",
+    community: "Comunidad"
   }
 
   return (
@@ -35,10 +35,6 @@ const PostCard = ({ post, reload }) => {
       <div className="postCard__header">
         <span className={`postCard__type ${post.type}`}>
           {labels[post.type]}
-        </span>
-
-        <span className="postCard__date">
-          {formatDate(post.createdAt)}
         </span>
 
         {user?.uid === post.authorId && (

@@ -133,7 +133,7 @@ export const games = [
     {
         id: 16,
         name: "GTA V",
-        img: getImage("gta.jpg"),
+        img: getImage("gtav.jpg"),
         price: 29.99,
         featured: false,
         category: "Open World"
@@ -213,7 +213,7 @@ export const games = [
     {
         id: 26,
         name: "Shinobi: Art of Vengeance",
-        img: getImage("shinobi-art-vengeance.jpg"),
+        img: getImage("shinobi-art-vengance.jpg"),
         price: 39.99,
         featured: false,
         category: "Action"
